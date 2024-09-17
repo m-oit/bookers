@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 13px 30px 10px;
+  font-size: 25px;
+  color: #333333;
+}
+
+th {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #333333;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 5px;
+
+}
+
+td {
+  font-size: 13px;
+  line-height: 18px;
+  padding-bottom: 7px;
+  padding-left: 30px;
+  padding-right: 5px;
+}
+
+h2 {
+  color: #333333;
+  font-size: 15px;
+  margin: 20px 20px 10px;
+}
+
+label {
+  display: block;
+  color: #333333;
+}
+
+.form {
+  display: block;
+  margin-left: 30px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  text-decoration: underline;
+}
+

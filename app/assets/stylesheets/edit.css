@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin:30px;
+  font-size:2em;
+  font-weight: bold;
+  color: #333333;
+}
+
+.book-edit {
+  display: block;
+  margin: 10px 30px 0;
+  font-size: 13px;
+}
+
+.book-edit label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.submit-button {
+  margin: 10px 0;
+}
+
+.book-edit input[type="submit"] {
+  padding: 3px 5px;
+}
+
+.book-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  font-size: 13px;
+}
+
+.book-link a {
+  margin-right: 0;
+  text-decoration: none;
+  color: inherit;
+}

@@ -9,7 +9,7 @@ class BooksController < ApplicationController
     flash[:notice]= "Book was successfully created."
     redirect_to book_path(@book.id)
   else
-    flash.now[:alert]= "投稿に失敗しました。"
+    flash.now[:alert]= "#{ @book.errors.count } errors prohibited this book from being saved:"
     render :new
   end
   end

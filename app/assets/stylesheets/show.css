@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book-set {
+  display: flex;
+  margin: 10px 40px;
+  font-size: 13px;
+  color: #333333;
+}
+
+.book-set strong {
+  padding-top: 12px;
+  padding-right: 10px;
+}
+
+.book-select {
+  margin: 20px 0;
+  font-size: 13px;
+  color: #000000;
+}

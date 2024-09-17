@@ -1,13 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheets" href="show.css" />
+</head>
 
+<div class="book-set">
+    <strong>Title:</strong>
+     <p><%= @book.title %></p>
+  </div>
 
-<h2>Title</h2>
-<p><%= @book.title %></p>
+<div class="book-set">
+    <strong>Body:</strong>
+      <p><%= @book.body %></p>
+  </div>
 
-<h2>Body</h2>
-<p><%= @book.body %></p>
-
-
+<div class="book-select">
 <%= link_to "Edit", edit_book_path(@book.id) %>
- <a href = /books>back</a>
+ <a href = /books>Back</a>
+</div>
 
-<%= link_to "destroy", book_path(@book.id), method: :delete %>
