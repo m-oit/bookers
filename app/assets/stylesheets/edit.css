@@ -31,15 +31,10 @@ h1 {
 }
 
 .book-link {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0;
+  margin-left: 40px;
   font-size: 13px;
 }
 
 .book-link a {
-  margin-right: 0;
-  text-decoration: none;
-  color: inherit;
+  
 }

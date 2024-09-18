@@ -4,15 +4,16 @@ class BooksController < ApplicationController
   end
 
   def create
-  @book = Book.new(book_params)
-  if @book.save
-    flash[:notice]= "Book was successfully created."
-    redirect_to book_path(@book.id)
-  else
-    flash.now[:alert]= "#{ @book.errors.count } errors prohibited this book from being saved:"
-    render :new
+   @book = Book.new(book_params)
+   if @book.save
+    flash[:notice] = "Book was successfully created."
+    redirect_to @book
+   else
+     @books = Book.all
+    render :index
+   end
   end
-  end
+
 
   def index
     @book = Book.new
@@ -21,7 +22,11 @@ class BooksController < ApplicationController
 
   def show
     @book = Book.find(params[:id])
+    if flash[:notice]
+    @show_notice = flash[:notice]
+    flash.delete(:notice)
   end
+ end
 
   def edit
     @book = Book.find(params[:id])
@@ -30,12 +35,14 @@ class BooksController < ApplicationController
   def update
   book = Book.find(params[:id])
   book.update(book_params)
+  flash[:notice] = "Book was successfully updated."
   redirect_to book_path(book.id)
   end
   
   def destroy
   book = Book.find(params[:id])
   book.destroy
+  flash[:notice] = "Book was successfully destroyed."
   redirect_to '/books'
   end
   
@@ -44,5 +51,4 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(:title, :body, :author)
   end
-  
-end
+  end

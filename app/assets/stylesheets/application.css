@@ -13,4 +13,26 @@
  *= require_tree .
  *= require_self
  */
+ 
+ a {
+  margin-left: 0 !important;
+}
+
+p  {
+  margin-top: 10px !important;
+  margin-left: 0 !important;
+}
+
+.error-masseges {
+ width: 500px;
+ font-size: 13px;
+ margin-bottom: 20px;
+ border: 1px solid;
+}
+
+.error-comment {
+ color: white;
+ background-color:  red;
+ 
+}
 

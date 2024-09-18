@@ -6,18 +6,25 @@
 
 .book-set {
   display: flex;
-  margin: 10px 40px;
   font-size: 13px;
   color: #333333;
 }
 
 .book-set strong {
-  padding-top: 12px;
-  padding-right: 10px;
+  margin-top: 10px;
+  margin-left: 60px;
+ padding: 13px 0 20px 0;
+  
+}
+
+.book-set p {
+  display: flex;
+  margin-top: 20px;
 }
 
 .book-select {
-  margin: 20px 0;
+  margin: 20px 40px;
   font-size: 13px;
   color: #000000;
 }
+

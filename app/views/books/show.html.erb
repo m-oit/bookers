@@ -5,6 +5,11 @@
     <link rel="stylesheets" href="show.css" />
 </head>
 
+<body>
+ <% if @show_notice %>
+  <div class="notice"><%= @show_notice %></div>
+<% end %>
+
 <div class="book-set">
     <strong>Title:</strong>
      <p><%= @book.title %></p>
@@ -19,4 +24,6 @@
 <%= link_to "Edit", edit_book_path(@book.id) %>
  <a href = /books>Back</a>
 </div>
+</body>
+</html>
 
