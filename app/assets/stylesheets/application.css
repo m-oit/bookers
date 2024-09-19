@@ -14,8 +14,14 @@
  *= require_self
  */
  
- a {
+.top-page {
+  margin-left: 50px;
+}
+
+a {
+
   margin-left: 0 !important;
+
 }
 
 p  {
